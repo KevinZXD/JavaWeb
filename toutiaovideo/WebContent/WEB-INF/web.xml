@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+  <display-name></display-name>
+
+<servlet>  
+    <servlet-name>controlServlet</servlet-name>  
+    <servlet-class>cn.netjava.servlet.ControlServlet</servlet-class>  
+    <init-param>  
+        <param-name>getVideoAction</param-name>  
+        <param-value>cn.netjava.action.GetVideoAction</param-value>  
+    </init-param>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>controlServlet</servlet-name>  
+    <url-pattern>*.do</url-pattern>  
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Json</servlet-name>
+    <servlet-class>com.json.Json2Jsp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Json</servlet-name>
+    <url-pattern>/process</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>video.html</welcome-file>
+  </welcome-file-list>
+</web-app>
