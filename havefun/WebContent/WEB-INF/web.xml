@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+  <display-name></display-name>
+
+<servlet>  
+    <servlet-name>controlServlet</servlet-name>  
+    <servlet-class>cn.netjava.servlet.ControlServlet</servlet-class>  
+    <init-param>  
+        <param-name>loginAction</param-name>  
+        <param-value>cn.netjava.action.LoginAction</param-value>  
+    </init-param>  
+     <init-param>  
+        <param-name>adviceAction</param-name>  
+        <param-value>cn.netjava.action.AdviceAction</param-value>  
+    </init-param> 
+    <init-param>  
+        <param-name>themeAction</param-name>  
+        <param-value>cn.netjava.action.ThemeAction</param-value>  
+    </init-param> 
+    <init-param>  
+        <param-name>passmodifyAction</param-name>  
+        <param-value>cn.netjava.action.PassmodifyAction</param-value>  
+    </init-param> 
+    <init-param>  
+        <param-name>registerAction</param-name>  
+        <param-value>cn.netjava.action.RegisterAction</param-value>  
+    </init-param>  
+     <init-param>  
+        <param-name>emailAction</param-name>  
+        <param-value>cn.netjava.action.EmailAction</param-value>  
+    </init-param> 
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>controlServlet</servlet-name>  
+    <url-pattern>*.do</url-pattern>  
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Json</servlet-name>
+    <servlet-class>com.json.Json2Jsp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Json</servlet-name>
+    <url-pattern>/process</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>register.html</welcome-file>
+  </welcome-file-list>
+</web-app>

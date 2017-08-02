@@ -1,0 +1,202 @@
+
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>听音乐</title>
+   <link rel="shortcut icon" href="../image/zxd.ico">
+<script type="text/javascript">
+function jumpTo() { 
+	   var customerId=sessionStorage.customerId; 
+	   if (customerId == undefined) { 
+		   alert("抱歉，请您注册登陆后再访问！");
+	    window.location.href="../register.html";
+	    } else{
+	    	
+	    }
+	}
+jumpTo();
+</script>
+<style type="text/css">
+*{margin:0px; padding:0px;}
+body{background:url("images/bg.jpg");/*背景图片*/}
+#Music{width:960px;/*宽*/ height:250px;/*高*/ background:url("images/banner.jpg");
+		margin:50px auto 0px; position:relative;/*相对定位*/}
+#Music ul li{width:120px; height:120px; color:#fff;
+			list-style-type:none;/*去掉圆点*/ position:absolute;/*绝对定位*/
+			}
+#Music ul li.box5{left:690px; top:100px;}
+#Music ul li.box4{left:550px; top:80px;}
+#Music ul li.box3{left:308px; top:66px;}
+#Music ul li.box2{left:161px; top:132px;}
+#Music ul li.box1{left:20px; top:20px;}
+#Music ul li.box6{left:770px; top:150px;}
+#Music ul li.box7{left:750px; top:350px;}
+#Music ul li.box8{left:450px; top:230px;}
+#Music ul li.box9{left:350px; top:200px;}
+#Music ul li.box10{left:650px; top:230px;}
+#Music ul li.box11{left:200px; top:210px;}
+#Music ul li img{border-radius:50%;/*圆角的半径*/}
+#Music ul li img:hover{-webkit-transform:scale(1.1);-webkit-transition:all 0.3s linear;}
+#Music ul li img.zqq{-webkit-animation:zq 2s infinite linear;}
+@-webkit-keyframes zq{
+						from{-webkit-transform:rotate(0deg);}
+						to{-webkit-transform:rotate(360deg);}
+					}
+
+/*MusicCon  begin*/
+.MusicCon{width:560px; height:115px; position:fixed;/*固定定位*/
+			left:0px; bottom:50px; background:#000; overflow:hidden;/*超出部分隐藏*/}
+.MusicCon .ImgTxt{width:300px; height:115px;position:absolute; left:0px;}
+.MusicCon .But{width:160px; height:75px;position:absolute;padding-top:40px; left:300px;}
+.MusicCon .clickBut{width:22px; height:115px; background:blue;position:absolute;
+			right:0px;}
+
+.MusicCon .ImgTxt dl{width:300px; height:100px; padding-top:13px;}
+.MusicCon .ImgTxt dl dt{width:90px;height:90px; float:left;}
+.MusicCon .ImgTxt dl dd{width:200px; height:90px; float:right;
+						color:#fff;font-size:22px; line-height:90px;}
+.MusicCon .But a{width:24px;height:32px;display:block;
+			float:left; margin:0px 10px;}
+.MusicCon .But a.prev{background:url("images/prev.jpg") no-repeat center;}
+.MusicCon .But a.play{background:url("images/pause.jpg") no-repeat center;}
+.MusicCon .But a.next{background:url("images/next.jpg") no-repeat center;}
+.MusicCon .But a.prev:hover{background:url("images/prev1.jpg") no-repeat center;}
+.MusicCon .But a.play:hover{background:url("images/pause2.jpg") no-repeat center;}
+.MusicCon .But a.next:hover{background:url("images/next1.jpg") no-repeat center;}
+</style>
+
+ </head>
+ <body>
+
+
+<div id="Music">
+
+
+
+	<ul>
+	
+		<li class="box1">
+			<img src="images/bigbang.jpg" width='100' height='100' title="BANG BANG BANG！！"
+			dataSrc='musics/132629053.mp3'/>
+		</li>
+		<li class="box2">
+			<img src="images/xjy.jpg" width='80' height='80' title="洋葱" dataSrc='musics/2.mp3'/>
+		</li>
+		
+		<li class="box3">
+			<img src="images/zjl.jpg" width='120' height='120' title="七里香" dataSrc='musics/qilixiang.mp3'/>
+		</li>
+		<li class="box4">
+			<img src="images/sugar.jpg" width='110' height='110' title="sugar" dataSrc='musics/39058628.mp3'/>
+		</li>
+		    <li class="box5">
+			<img src="images/love.jpg" width='100' height='100' title="愛情转移" dataSrc='musics/aiqingzhuanyi.mp3'/>
+		</li>
+		<li class="box6">
+			<img src="images/jiuer.jpg" width='140' height='140' title="九儿" dataSrc='musics/jiuer.mp3'/>
+		</li>
+		<li class="box7">
+			<img src="images/ghyjn.jpg" width='150' height='150' title="刚好遇见你" dataSrc='musics/ghyjn.mp3'/>
+		</li>
+		<li class="box8">
+			<img src="images/houlai.jpg" width='90' height='90' title="后来" dataSrc='musics/hl.mp3'/>
+		</li>
+		<li class="box9">
+			<img src="images/cd.jpg" width='70' height='70' title="成都" dataSrc='musics/chengdu.mp3'/>
+		</li>
+		<li class="box10">
+			<img src="images/zjl.jpg" width='130' height='110' title="告白气球" dataSrc='musics/gbqq.mp3'/>
+		</li>
+		<li class="box11">
+			<img src="images/wk.jpg" width='140' height='140' title="悟空" dataSrc='musics/wukong.mp3'/>
+		</li>
+	</ul>
+</div>
+<!--点播音乐结束-->
+
+
+<!--音乐播放按扭开始-->
+<div class="MusicCon">
+	<div class='ImgTxt'>
+		<dl>
+			<dt><img src="images/zjl.jpg" width='90' height='90' class="butImg"/></dt>
+			<dd>欢迎收听</dd>
+		</dl>
+	</div>
+
+	<div class="But">
+		<a href="#" class='prev'></a>
+		<a href="#" class='play'></a>
+		<a href="#" class='next'></a>
+	</div>
+
+	<div class="clickBut"><img src="images/but.png" /></div>
+
+	<div class="playBox"></div>
+</div>
+<!--音乐播放按扭结束-->
+
+<!--引用外部 jquery类库文件-->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+
+	var mark=1; //打开
+	$(".clickBut").click(function(){
+		if(mark==1){
+			$(".MusicCon").animate({width:"22px"},1000);
+			mark=0;//关闭
+		}else{
+			$(".MusicCon").animate({width:"560px"},1000);
+			mark=1;//打开
+		}
+	});
+
+	var obj_Mp3=null;
+	var _index=0;
+	//点击可以点歌
+	$("#Music ul li").click(function(){
+		_index=$(this).index();//获取到序列号
+		$(this).find("img").addClass("zqq").parent().siblings('li').find("img").removeClass("zqq");//加上 class="zqq"
+		var simg=$(this).find("img").attr("src");
+		//alert(simg);
+		$(".butImg").attr("src",simg);
+		var stxt=$(this).find("img").attr("title");
+		$(".ImgTxt dl dd").text(stxt);
+		var sUrl=$(this).find("img").attr("dataSrc");
+		//创建音乐播器
+		obj_Mp3=creatMusic(sUrl);
+		obj_Mp3.play();//播放
+		
+	});
+
+	function creatMusic(src){
+	    var creat_Mp3=$("<audio src='"+src+"'></audio>").get(0);
+			$(".playBox").html("");
+			$(".playBox").append(creat_Mp3);
+			return creat_Mp3;	
+	};
+
+	//点击下一个向下播放
+	$("a.next").click(function(){
+		_index++;  //_index+1
+		$("#Music ul li").eq(_index).trigger('click'); //触发他的click事件
+	});
+
+
+	$("a.prev").click(function(){
+		_index--;  //_index+1
+		$("#Music ul li").eq(_index).trigger('click'); //触发他的click事件
+	});
+
+	$("a.play").click(function(){
+		obj_Mp3.pause();//暂停
+		$("#Music ul li").find("img").removeClass("zqq");
+	});
+
+</script>
+
+
+
+ </body>
+</html>

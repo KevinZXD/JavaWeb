@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041) -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths translated-ltr" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:url" content="">
+	<meta name="twitter:card" content="">
+<title>Have A Fun</title>
+<link rel="shortcut icon" href="./image/zxd.ico">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	
+	<link href="./guide_files/css" rel="stylesheet" type="text/css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="./guide_files/animate.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="./guide_files/flexslider.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="./guide_files/icomoon.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="./guide_files/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="./guide_files/bootstrap.css">
+
+	<!-- 
+	Default Theme Style 
+	You can change the style.css (default color purple) to one of these styles
+	-->
+	<link rel="stylesheet" href="./guide_files/style.css">
+
+	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+	<link rel="stylesheet" id="theme-switch" href="./guide_files/style.css">
+	<!-- End demo purposes only -->
+	<style>
+	/* For demo purpose only */
+
+	/*
+	GREEN
+	8dc63f
+	RED
+	FA5555
+	TURQUOISE
+	27E1CE
+	BLUE 
+	2772DB
+	ORANGE
+	FF7844
+	YELLOW
+	FCDA05
+	PINK
+	F64662
+	PURPLE
+	7045FF
+
+	*/
+	
+	/* For Demo Purposes Only ( You can delete this anytime :-) */
+	#colour-variations {
+		padding: 10px;
+		-webkit-transition: 0.5s;
+	  	-o-transition: 0.5s;
+	  	transition: 0.5s;
+		width: 140px;
+		position: fixed;
+		left: 0;
+		top: 100px;
+		z-index: 999999;
+		background: #fff;
+		/*border-radius: 4px;*/
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	#colour-variations.sleep {
+		margin-left: -140px;
+	}
+	#colour-variations h3 {
+		text-align: center;;
+		font-size: 11px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #777;
+		margin: 0 0 10px 0;
+		padding: 0;;
+	}
+
+	#colour-variations ul,
+	#colour-variations ul li {
+		padding: 0;
+		margin: 0;
+	}
+	#colour-variations ul {
+		margin-bottom: 20px;
+		float: left;	
+	}
+	#colour-variations li {
+		list-style: none;
+		display: inline;
+	}
+	#colour-variations li a {
+		width: 20px;
+		height: 20px;
+		position: relative;
+		float: left;
+		margin: 5px;
+	}
+
+
+
+	#colour-variations li a[data-theme="style"] {
+		background: #8dc63f;
+	}
+	#colour-variations li a[data-theme="red"] {
+		background: #FA5555;
+	}
+	#colour-variations li a[data-theme="turquoise"] {
+		background: #27E1CE;
+	}
+	#colour-variations li a[data-theme="blue"] {
+		background: #2772DB;
+	}
+	#colour-variations li a[data-theme="orange"] {
+		background: #FF7844;
+	}
+	#colour-variations li a[data-theme="yellow"] {
+		background: #FCDA05;
+	}
+	#colour-variations li a[data-theme="pink"] {
+		background: #F64662;
+	}
+	#colour-variations li a[data-theme="purple"] {
+		background: #7045FF;
+	}
+
+	#colour-variations a[data-layout="boxed"],
+	#colour-variations a[data-layout="wide"] {
+		padding: 2px 0;
+		width: 48%;
+		border: 1px solid #ededed;
+		text-align: center;
+		color: #777;
+		display: block;
+	}
+	#colour-variations a[data-layout="boxed"]:hover,
+	#colour-variations a[data-layout="wide"]:hover {
+		border: 1px solid #777;
+	}
+	#colour-variations a[data-layout="boxed"] {
+		float: left;
+	}
+	#colour-variations a[data-layout="wide"] {
+		float: right;
+	}
+
+	.option-toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-top: 5px;
+		margin-right: -30px;
+		width: 30px;
+		height: 30px;
+		background: #8dc63f;
+		text-align: center;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		color: #fff;
+		cursor: pointer;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	.option-toggle i {
+		top: 2px;
+		position: relative;
+	}
+	.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
+		color:  #fff;
+		text-decoration: none;
+		outline: none;
+	}
+	</style>
+	<!-- End demo purposes only -->
+
+
+	<!-- Modernizr JS -->
+	<script src="./guide_files/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<link type="text/css" rel="stylesheet" charset="UTF-8" href="./guide_files/translateelement.css"></head>
+<script src="./register_files/re.js">
+</script>
+
+	<!-- 
+		INFO:
+		Add 'boxed' class to body element to make the layout as boxed style.
+		Example: 
+		<body class="boxed">	
+	-->
+	<body><a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a><div id="fh5co-offcanvas"><ul id="fh5co-side-links"><li><a href=""><font><font>关于</font></font></a></li><li><a href=""><font><font>游览</font></font></a></li><li><a href=""><font><font>价钱</font></font></a></li><li><a href=""><font><font>登录</font></font></a></li><li class="fh5co-cta-btn"><a href=""><font><font>注册</font></font></a></li></ul></div><a href="" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a><div id="fh5co-offcanvas"><ul id="fh5co-side-links"><li><a href="http://demo.cssmoban.com/cssthemes3/ft5_34_guide/about.html"><font><font>关于</font></font></a></li><li><a href="http://demo.cssmoban.com/cssthemes3/ft5_34_guide/tour.html"><font><font>游览</font></font></a></li><li><a href="http://demo.cssmoban.com/cssthemes3/ft5_34_guide/pricing.html"><font><font>价钱</font></font></a></li><li><a href=""><font><font>登录</font></font></a></li><li class="fh5co-cta-btn"><a href=""><font><font>注册</font></font></a></li><li><a href=""><font><font>关于</font></font></a></li><li><a href=""><font><font>游览</font></font></a></li><li><a href=""><font><font>价钱</font></font></a></li><li><a href=""><font><font>登录</font></font></a></li><li class="fh5co-cta-btn"><a href=""><font><font>注册</font></font></a></li></ul></div>
+	
+	<!-- Loader -->
+	<div class="fh5co-loader" style="display: none;"></div>
+	
+	<div id="fh5co-page">
+		<section id="fh5co-header">
+			<div class="container">
+				<nav role="navigation">
+					<ul class="pull-left left-menu">
+						<li><a href="about.html"><font><font>关于</font></font></a></li>
+						<li><a href="http://www.toutiao.com"><font><font>今日头条</font></font></a></li>
+						<li><a href="video/video.html"><font><font>视频</font></font></a></li>
+						<li><a href="music/audio.html"><font><font>音乐</font></font></a></li>
+						<li><a href="https://www.douyu.com/"><font><font>斗鱼直播</font></font></a></li>
+						<li><a href="./picture.html"><font><font>图片</font></font></a></li>
+						<li><a href="https://www.douban.com/"><font><font>电影</font></font></a></li>
+						<li><a href="http://tuijian.hao123.com/"><font><font>新闻头条</font></font></a></li>
+						<li><a href="http://neihanshequ.com/"><font><font>段子</font></font></a></li>
+					</ul>
+					<ul class="pull-right right-menu">
+						<li><a href="./login.html"><font><font>欢迎您的来访</font></font></a></li>           
+						<li class="fh5co-cta-btn"><a href="./contact.html"><font><font>请留下您宝贵的建议</font></font></a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<!-- #fh5co-header -->
+
+		<section id="fh5co-hero" class="js-fullheight" style="background-image: url(&quot;images/hero_bg.jpg&quot;); height: 574px;" data-next="yes">
+			<div class="fh5co-overlay"></div>
+			<div class="container">
+				<div class="fh5co-intro js-fullheight" style="height: 574px;">
+					<div class="fh5co-intro-text">
+						<!-- 
+							INFO:
+							Change the class to 'fh5co-right-position' or 'fh5co-center-position' to change the layout position
+							Example:
+							<div class="fh5co-right-position">
+						-->
+						<div class="fh5co-left-position">
+							<h2 class="animate-box fadeInUp animated"><font><font>创建更美好的事情更好的Web</font></font></h2>
+							<p class="animate-box fadeInUp animated"><a href="http://www.chuanke.com/v1827213-183001-994729.html" class="btn btn-outline popup-vimeo btn-video"><i class="icon-play2"></i><font><font>观看视频</font></font></a> <a href="http://www.chuanke.com/course/_html5_____.html" target="_blank" class="btn btn-primary"><font><font>访问Freehtml5</font></font></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-learn-more animate-box fadeInUp animated" style="margin-left: -78.5px;">
+				<a href="" class="scroll-btn">
+					<span class="text"><font><font>了解更多关于我们</font></font></span>
+					<span class="arrow"><i class="icon-chevron-down"></i></span>
+				</a>
+			</div>
+		</section>
+		<!-- END #fh5co-hero -->
+        
+
+
+		<section id="fh5co-projects">
+			<div class="container">
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<h2 class="fh5co-lead animate-box fadeInUp animated"><font><font>我们的产品</font></font></h2>
+						<p class="fh5co-sub-lead animate-box fadeInUp animated"><font><font> </font></font></p>
+					</div>
+				</div>
+				<div class="row">
+					
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box fadeInUp animated">
+						<a href="./guide_files/img_1.jpg" class="fh5co-project-item image-popup">
+							<img src="./guide_files/img_1.jpg" alt="图片" class="img-responsive">
+							<div class="fh5co-text">
+								<h2><font><font>美丽的日出</font></font></h2>
+								<p><font><font></font></font></p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box fadeInUp animated">
+						<a href="./guide_files/img_2.jpg" class="fh5co-project-item image-popup">
+							<img src="./guide_files/img_2.jpg" alt="图片" class="img-responsive">
+							<div class="fh5co-text">
+								<h2><font><font>逗人喜爱的小犬座</font></font></h2>
+								<p><font><font></font></font></p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box fadeInUp animated">
+						<a href="./guide_files/img_3.jpg" class="fh5co-project-item image-popup">
+							<img src="./guide_files/img_3.jpg" alt="图片" class="img-responsive">
+							<div class="fh5co-text">
+								<h2><font><font>一座木桥</font></font></h2>
+								<p><font><font></font></font></p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box fadeInUp animated">
+						<a href="./guide_files/img_4.jpg" class="fh5co-project-item image-popup">
+							<img src="./guide_files/img_4.jpg" alt="图片" class="img-responsive">
+							<div class="fh5co-text">
+								<h2><font><font>小狗＆我在农场</font></font></h2>
+								<p><font><font></font></font></p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box fadeInUp animated">
+						<a href="./guide_files/img_5.jpg" class="fh5co-project-item image-popup">
+							<img src="./guide_files/img_5.jpg" alt="图片" class="img-responsive">
+							<div class="fh5co-text">
+								<h2><font><font>蓝色的大波浪</font></font></h2>
+								<p><font><font></font></font></p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box fadeInUp animated">
+						<a href="./guide_files/img_6.jpg" class="fh5co-project-item image-popup">
+							<img src="./guide_files/img_6.jpg" alt="图片" class="img-responsive">
+							<div class="fh5co-text">
+								<h2><font><font>有雾的杉树</font></font></h2>
+								<p><font><font></font></font></p>
+							</div>
+						</a>
+					</div>
+					
+					
+				</div>
+			</div>
+		</section>
+		<!-- END #fh5co-projects -->
+
+		
+		<!-- END #fh5co-features -->
+
+
+		
+		
+		<section id="fh5co-testimonials">
+			<div class="container">
+				<div class="row row-bottom-padded-sm">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<div class="fh5co-label animate-box fadeInUp animated"><font><font>见证</font></font></div>
+						<h2 class="fh5co-lead animate-box fadeInUp animated"><font><font class="">加入100万用户使用我们的产品 </font></font></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box fadeInUp animated">
+						<div class="flexslider" style="height: 247px; overflow: hidden;">
+					  		<ul class="slides">
+							   <li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+							      <blockquote>
+							      	<p><font><font>“创造力只是连接事物。</font><font>当你问创意人他们做了什么，他们觉得有点内疚，因为他们没有真正做到，他们只是看到了一些东西。</font><font>一段时间后，他们似乎很明显。</font></font></p>
+							      	<p><cite><font><font> - 史蒂夫·乔布斯</font></font></cite></p>
+							      </blockquote>
+							   </li>
+							   <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+							    	<blockquote>
+							      	<p><font><font>“我认为设计师会更好，如果设计师对其应用更加怀疑。</font><font>如果你相信你的工艺的潜力，你选择去做它不是轻轻地采取的东西。</font></font></p>
+							      	<p><cite><font><font> -  Frank Chimero</font></font></cite></p>
+							      </blockquote>
+							   </li>
+							   <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+							    	<blockquote>
+							      	<p><font><font>“设计必须是功能性的，功能必须转化为视觉美学，​​而不必依赖必须解释的g头。</font></font></p>
+							      	<p><cite><font><font> -  Ferdinand A.保时捷</font></font></cite></p>
+							      </blockquote>
+							   </li>
+							</ul>
+						</div>
+						<div class="flexslider-controls">
+						   <ol class="flex-control-nav">
+						      <li class="animate-box fadeInUp animated flex-active"><img src="./guide_files/person4.jpg" alt=""></li>
+						      <li class="animate-box fadeInUp animated"><img src="./guide_files/person2.jpg" alt=""></li>
+						      <li class="animate-box fadeInUp animated"><img src="./guide_files/person3.jpg" alt=""></li>
+						   </ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END #fh5co-testimonials -->
+
+		<section id="fh5co-subscribe">
+			<div class="container">
+		
+				<h3 class="animate-box fadeInUp animated"><label for="email"><font><font>请订阅我们的服务</font></font></label></h3>
+				<form action="emailAction.do" method="post" class="animate-box fadeInUp animated">
+					<i class="fh5co-icon icon-paper-plane"></i>
+					<input type="email" class="form-control" placeholder="Enter your email" id="email" name="email" required="required"/>
+					<font><font><input type="submit" value="发送" class="btn btn-primary"></font></font>
+				</form>
+
+			</div>
+		</section>
+		<!-- END #fh5co-subscribe -->
+
+		<footer id="fh5co-footer">
+			<div class="container">
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-3 col-sm-6 col-xs-12 animate-box fadeInUp animated">
+						<div class="fh5co-footer-widget">
+							<h3><font><font>公司</font></font></h3>
+							<ul class="fh5co-links">
+								<li><a href=""><font><font>关于我们</font></font></a></li>
+								<li><a href=""><font><font>职业</font></font></a></li>
+								<li><a href=""><font><font>特色旅游</font></font></a></li>
+								<li><a href=""><font><font>价钱</font></font></a></li>
+								<li><a href=""><font><font>球队</font></font></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12 animate-box fadeInUp animated">
+						<div class="fh5co-footer-widget">
+							<h3><font><font>支持</font></font></h3>
+							<ul class="fh5co-links">
+								<li><a href=""><font><font>知识库</font></font></a></li>
+								<li><a href=""><font><font>24/7呼叫支持</font></font></a></li>
+								<li><a href=""><font><font>视频演示</font></font></a></li>
+								<li><a href=""><font><font>使用条款</font></font></a></li>
+								<li><a href=""><font><font>隐私政策</font></font></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12 animate-box fadeInUp animated">
+						<div class="fh5co-footer-widget">
+							<h3><font><font>联系我们</font></font></h3>
+							<p>
+								<a href="mailto:info@freehtml5.co"><font><font>信息@ WIT</font></font></a> <br><font><font> 
+								武汉市</font></font><br><font><font>
+								江夏区 </font></font><br>
+								<a href="tel:+123456789"><font><font>+12 34 5677 89</font></font></a>
+							</p>
+						</div>
+					</div>
+
+					
+
+				</div>
+				
+			</div>
+			<div class="fh5co-copyright animate-box fadeInUp animated">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="fh5co-left"><small><font><font>2016年© </font></font><a href=""><font><font>指南</font></font></a><font><font></font><font>kevin版权所有。</font></font></small></p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END #fh5co-footer -->
+	</div>
+	<!-- END #fh5co-page -->
+	
+	<!-- For demo purposes Only ( You may delete this anytime :-) -->
+	<div id="colour-variations">
+		<a class="option-toggle"><i class="icon-gear"></i></a>
+		<h3><font><font>预设颜色</font></font></h3>
+		<ul>
+			<li><a href="javascript: void(0);" data-theme="style"></a></li>
+			<li><a href="javascript: void(0);" data-theme="red"></a></li>
+			<li><a href="javascript: void(0);" data-theme="turquoise"></a></li>
+			<li><a href="javascript: void(0);" data-theme="blue"></a></li>
+			<li><a href="javascript: void(0);" data-theme="orange"></a></li>
+			<li><a href="javascript: void(0);" data-theme="yellow"></a></li>
+			<li><a href="javascript: void(0);" data-theme="pink"></a></li>
+			<li><a href="javascript: void(0);" data-theme="purple"></a></li>
+		</ul>
+		
+	</div>
+	<!-- End demo purposes only -->
+
+	
+	<!-- jQuery -->
+	<script src="./guide_files/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="./guide_files/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="./guide_files/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="./guide_files/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="./guide_files/jquery.flexslider-min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="./guide_files/jquery.magnific-popup.min.js"></script>
+	<script src="./guide_files/magnific-popup-options.js"></script>
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="./guide_files/jquery.style.switcher.js"></script>
+	<script>
+		$(function(){
+			$('#colour-variations ul').styleSwitcher({
+				defaultThemeId: 'theme-switch',
+				hasPreview: false,
+				cookie: {
+		          	expires: 30,
+		          	isManagingLoad: true
+		      	}
+			});	
+			$('.option-toggle').click(function() {
+				$('#colour-variations').toggleClass('sleep');
+			});
+		});
+	</script>
+	<!-- End demo purposes only -->
+
+	<!-- Main JS (Do not remove) -->
+	<script src="./guide_files/main.js"></script>
+
+	<!-- 
+	INFO:
+	jQuery Cookie for Demo Purposes Only. 
+	The code below is to toggle the layout to boxed or wide 
+	-->
+	<script src="./guide_files/jquery.cookie.js"></script>
+	<script>
+		$(function(){
+
+			if ( $.cookie('layoutCookie') != '' ) {
+				$('body').addClass($.cookie('layoutCookie'));
+			}
+
+			$('a[data-layout="boxed"]').click(function(event){
+				event.preventDefault();
+				$.cookie('layoutCookie', 'boxed', { expires: 7, path: '/'});
+				$('body').addClass($.cookie('layoutCookie')); // the value is boxed.
+			});
+
+			$('a[data-layout="wide"]').click(function(event){
+				event.preventDefault();
+				$('body').removeClass($.cookie('layoutCookie')); // the value is boxed.
+				$.removeCookie('layoutCookie', { path: '/' }); // remove the value of our cookie 'layoutCookie'
+			});
+		});
+	</script><div id="goog-gt-tt" class="goog-tooltip skiptranslate" dir="ltr" style="visibility: hidden; left: 801px; top: 4313px; display: none;"><div style="padding: 8px;"><div><div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text">Join the 1 Million Users using Our Products</div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none; opacity: 0;"></div></div>
+	
+
+	
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

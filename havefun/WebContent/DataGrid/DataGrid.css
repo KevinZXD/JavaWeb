@@ -1,0 +1,102 @@
+﻿.houfeng-table input
+{
+	font-family: Verdana,宋体;
+	font-size: 11px;
+}
+.houfeng-table table
+{
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.houfeng-table td
+{
+	font-size: 13px;
+	border: solid 1px #ddd;
+	padding: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: keep-all;
+	white-space: nowrap;
+	font-family: Verdana,宋体;
+}
+.houfeng-table .tdediting
+{
+	 background-color:#ffffaa;
+}
+.houfeng-table .tdediting .TdEditTextBox
+{
+	border:solid 0px #fff !important;
+	background-color:#ffffaa;
+	width:98%;
+	outline:none  !important;
+}
+.houfeng-table .tdediting .TdEditTextBox:focus
+{
+	border:solid 0px #fff !important;
+}
+
+.houfeng-table .resizer
+{
+	cursor: w-resize;
+	float: right;
+	overflow: hidden;
+	display: block;
+	width: 2px;
+	border-left: dotted 1.6px #666;
+}
+.houfeng-table .header
+{
+	cursor:default ;
+}
+.houfeng-table .sorticon
+{
+	float:right;
+	display:none;
+}
+.houfeng-table .headtdcontent
+{
+	margin-right:15px;
+}
+
+.houfeng-table .htd
+{
+	border-left: solid 1px #aaa !important;
+	border-top: none !important;
+	border-bottom: none !important;
+	border-right: solid 1px #aaa !important;
+}
+
+/***********************/
+
+.houfeng-table .TableHeadArea
+{
+	overflow: hidden;
+	position: relative;
+	background-color: #E7F0F8;
+	border-bottom: solid 1px #9aa;
+}
+
+.houfeng-table .TableBodyArea
+{
+	overflow: auto;
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+
+.houfeng-table .TableHead
+{
+	width: 10px;
+}
+.houfeng-table .TableBody
+{
+	width: 10px;
+}
+.houfeng-table
+{
+	overflow: hidden;
+	border: solid 1px #9aa;
+	width: auto;
+	display: inline-table; *display:inline;
+	zoom:1;
+	display: inline-table;
+}

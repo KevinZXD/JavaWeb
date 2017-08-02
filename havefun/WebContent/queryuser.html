@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>查询用户注册表信息</title>
+<meta http-equiv="content-type" content="text/html charset=utf-8" />
+<script src="DataGrid/jquery-1.4.1.min.js" type="text/javascript"></script>
+<link href="DataGrid/DataGrid.css" rel="stylesheet" type="text/css" />
+<script src="DataGrid/jQuery.Houfeng.Core.js" type="text/javascript"></script>
+<script src="DataGrid/jQuery.Houfeng.Repeater.js" type="text/javascript"></script>
+<script src="DataGrid/jQuery.Houfeng.DataGrid.js" type="text/javascript"></script>
+<script src="js/query.js" type="text/javascript"></script>
+<script src="register_files/re.js" type="text/javascript"></script>
+<style>
+.tr1 {
+	background-color: white;
+}
+
+.tr2 {
+	background-color: #f0f0f2;
+}
+
+.trhover {
+	color: red;
+}
+</style>
+</head>
+<body>
+	<div id="main" style="margin-left: auto; margin-right: auto;">
+		<form style="margin-left: 200px; margin-right: auto;">
+			管理员账户<input type="text" id="username" name="username" /> 密码
+			<input type="text" id="password" name="password" /> 查询的注册用户表    <input
+				type="hidden" id="table" name="table" value="users"/> <input type="button"
+				id="validate" value="查询" />
+		</form>
+
+	</div>
+	<div id="content" style="width: auto; margin: auto; display: none;">
+		<br /> </br>
+		<table id="test">
+			<tr class="header">
+				<td style="width: 100px;" sort='true'>邮箱</td>
+				<td style="width: 100px;" sort='true'>密码</td>
+					<td style="width: 100px;" sort='true'>联系人</td>
+					<td style="width: 200px;" sort='true'>密保</td>
+					<td style="width: 100px;" sort='true'>手机</td>
+					<td style="width: 200px;" sort='true'>QQ</td>
+			</tr>
+			<tr class="itemtemplate">
+				<td editable='true'>{email}</td>
+				<td editable='true'>{password}</td>
+
+				<td editable='true'>{contact}</td>
+				<td editable='true'>{company}</td>
+					<td editable='true'>{tele}</td>
+				<td editable='true'>{qq}</td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>
